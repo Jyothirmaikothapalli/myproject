@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function myAddition()
+        {
+            var a= parseInt(document.getElementById('n1').value);
+            var b= parseInt(document.getElementById('n2').value); 
+           var i= parseInt(document.getElementById('n3').value);
+            //var j= parseInt(document.getElementById('n2').value);
+           var res=0;
+           switch (i)
+           {
+               case 1:
+               res = a+b;
+               break;
+               case 2:
+               res = a-b;
+               break;
+               case 3:
+               res = a*b;
+               break;
+               case 4:
+               res = a/b;
+               break;
+               default:
+               res=0;
+            }
+            document.getElementById('ans').value = res;
+            
+        }
+
+    </script>
+</head>
+<body>
+    number 1<input type="text" id="n1" ><br>
+    number 2<input type="text" id="n2" ><br>
+    number 3<input type="text" id="n3" ><br>
+    ans <input type="text" id="ans" ><br>
+    <input type="button" name="btn" value="click" onclick="myAddition()">
+</body>
+</html>

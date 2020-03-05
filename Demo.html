@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var i=parseInt(document.getElementById('a').value);
+            if(i.isLetter)
+            {
+                alert("letter");
+            }
+            else if(i.isDigit)
+            {
+                alert("num");
+            }
+            else{
+                alert("specilachar");
+            }
+        }
+    </script>
+</head>
+<body>
+    enter value<input type="text" id='a'>
+    <h2><input type="button" name="btn" value="check" onclick="check();"></h2>
+    
+</body>
+</html>
